@@ -1,0 +1,198 @@
+/* all */
+@media (max-width: 1400px){
+	.container {width: 100%;}
+}
+@media (max-width: 480px){
+	.row {padding: 0 20px;}
+}
+
+/* nav */
+@media (max-width: 800px){
+	.nav .list-item {font-size: 10vw;}
+}
+@media (max-width: 480px){
+	.header .menu-icon {right: 20px;}
+}
+
+/* line */
+@media (max-width: 480px){
+	.line.vline {width: 50%;}
+	.line.mline:after {border: 0;}
+}
+
+/* sec1 */
+@media (max-width: 900px){
+	.sec1 .title h2 {font-size: 7vw;}
+	.sec1 .title > div {font-size: 5vw;}
+	.sec1 .title .revealer .revealer_element2 {height: 8px;}
+}
+@media (max-width: 380px){
+	.sec1 .title .revealer .revealer_element2 {height: 5px;}
+}
+
+
+/* profile */
+@media (max-width: 1216px){
+	.sec2 .profile .prof_photo {height: 620px;}
+
+	.sec2 .profile .prof_info {height: 620px;}
+	.sec2 .profile .prof_info h3 {font-size: 60px;}
+	.sec2 .profile .prof_info p {font-size: 38px;}
+
+	.sec2 .profile .prof_info .tag strong {font-size: 34px;}
+	.sec2 .profile .prof_info .tag a {font-size: 24px;}
+}
+@media (max-width: 1053px){
+	.sec2 .profile .prof_photo {width: 50%; height: 600px;}
+
+	.sec2 .profile .prof_info {width: 50%; height: 600px;}
+	.sec2 .profile .prof_info h3 {font-size: 48px;}
+	.sec2 .profile .prof_info p {font-size: 32px;}
+}
+@media (max-width: 965px){
+	.sec2 .profile .prof_photo {float: none; width: 100%; border-right: 0; border-bottom: 1px solid #000; background-size: 600px;}
+
+	.sec2 .profile .prof_info {float: none; width: 100%;}
+
+	.sec2 .detail .detail_txt strong {font-size: 48px;}
+	.sec2 .detail .detail_txt p {font-size: 24px;}
+}
+@media (max-width: 700px){
+	.sec2 .band {height: 80px; line-height: 80px;}
+	.sec2 .band p {font-size: 30px;}
+
+	.sec2 .profile .prof_photo {height: 500px;}
+	
+	.sec2 .profile .prof_info {height: 530px;}
+	.sec2 .profile .prof_info p {margin-bottom: 160px;}
+
+	.sec2 .detail .detail_txt {margin-top: 25%;}
+}
+@media (max-width: 520px){
+	.sec2 .profile .prof_photo {height: 450px; background-size: 500px;}
+
+	.sec2 .profile .prof_info {height: 480px; padding: 20px 0 0 30px;}
+	.sec2 .profile .prof_info h3 {font-size: 40px;}
+	.sec2 .profile .prof_info p {font-size: 30px;}
+
+	.sec2 .profile .prof_info .tag strong {font-size: 30px;}
+	.sec2 .profile .prof_info .tag a {font-size: 20px;}
+	.sec2 .profile .prof_info .tag br {display: none;}
+
+	.sec2 .profile .prof_info .pick {height: 80px; line-height: 80px;}
+	.sec2 .profile .prof_info .pick a {width: 100%; font-size: 34px;}
+	.sec2 .profile .prof_info .pick .heart {display: none;}
+
+	.sec2 .detail .detail_txt strong {font-size: 30px;}
+	.sec2 .detail .detail_txt p {font-size: 18px;}
+}
+@media (max-width: 380px){
+	.sec2 .band {height: 60px; line-height: 60px;}
+	.sec2 .band p {font-size: 24px;}
+
+	.sec2 .profile .prof_photo {height: 380px; background-size: 400px;}
+	.sec2 .profile .prof_photo .circle {display: none;}
+
+	.sec2 .profile .prof_info h3 {font-size: 36px;}
+	.sec2 .profile .prof_info h3 span {display: block;}
+	.sec2 .profile .prof_info p {font-size: 24px; margin-bottom: 110px;}
+
+	.sec2 .profile .prof_info .tag strong {font-size: 24px;}
+	.sec2 .profile .prof_info .tag a {font-size: 18px;}
+	
+	.sec2 .detail .detail_txt {padding: 0 20px;}
+	.sec2 .detail .detail_txt strong {font-size: 28px;}
+	.sec2 .detail .detail_txt p {font-size: 16px;}
+}
+
+
+/* skill*/
+@media (max-width: 1080px){
+	.sec2 .skill ul li {width: 25%;}
+}
+@media (max-width: 770px){
+	.sec2 .skill ul li {width: 30%;}
+	.sec2 .skill ul li canvas {width: 180px !important; height: 180px !important;}
+	.sec2 .skill ul li a strong {font-size: 50px;}
+	.sec2 .skill ul li a span::before{font-size: 20px;}
+}
+@media (max-width: 580px){
+	.sec2 .skill ul li {width: 45%;}
+}
+@media (max-width: 480px){
+	.sec2 .skill ul li canvas {width: 140px !important; height: 140px !important;}
+	.sec2 .skill ul li a strong {font-size: 45px;}
+	.sec2 .skill ul li a span {font-size: 14px;}
+}
+
+/* review */
+@media (max-width: 1350px){
+	.sec2 .review .re-text {margin-top: 0px;}
+	.sec2 .review .re-text p {font-size: 8em;}
+	.sec2 .review .re-text h3 {font-size: 8em;}
+}
+@media (max-width: 1160px){
+	.sec2 .review .re-text p {font-size: 7em;}
+	.sec2 .review .re-text h3 {font-size: 7em;}
+	
+	.sec2 .review .re-slide div {height: 300px;}
+}
+@media (max-width: 1020px){
+	.sec2 .review .re-text h3 {font-size: 6em;}
+
+	.sec2 .review .re-text {float: none; width: 100%;}
+	.sec2 .review .re-text p {display: none;}
+	.sec2 .review .re-text h3 {text-align: left; margin-top: 0;}
+	
+	.sec2 .review .re-slide {float: none; width: 100%;}
+	.sec2 .review .re-slide div {height: auto;}
+}
+@media (max-width: 600px){
+	.sec2 .review .re-text h3 {font-size: 4em;}
+	
+	.sec2 .review .re-slide {padding: 20px;}
+	.sec2 .review .re-slide div h4 {font-size: 30px;}
+}
+@media (max-width: 480px){
+	.sec2 .review .re-text h3 {font-size: 2.8em;}
+
+	.sec2 .review .re-slide div h4 {font-size: 26px;}
+	.sec2 .review .re-slide div p {font-size: 16px;}
+}
+
+/* sec3 */
+@media (max-width: 900px){
+	.sec3 .proj .proj-left {float: none; width: 100%;}
+	.sec3 .proj .proj-right {float: none; width: 100%; padding: 10%; box-sizing: border-box;}
+	.sec3 .proj:nth-child(even) .proj-left {float: none; width: 100%;}
+	.sec3 .proj:nth-child(even) .proj-right {float: none; width: 100%;}
+
+	.sec3 .proj .proj-right h3 {font-size: 6vw;}
+	.sec3 .proj .proj-right h3 span {font-size: 3vw;}
+	.sec3 .proj .proj-right .proj-desc {font-size: 16px;}
+}
+@media (max-width: 400px){
+	.sec3 .proj .proj-right h3 {font-size: 8vw;}
+	.sec3 .proj .proj-right h3 span {font-size: 4vw;}
+	.sec3 .proj .proj-right .proj-desc {font-size: 14px;}
+}
+
+/* footer */
+@media (max-width: 1040px){
+	.footer h3 {float: none; width: 100%; margin-bottom: 5%; padding-left: 4.5vw;}
+	.footer .address {float: none; width: 100%; margin-top: 0; padding-left: 4.5vw;}
+	.footer .address p {display: inline-block; text-align: left; margin-right: 50px; font-size: 2em; margin: 10px 0;}
+	.footer .form {width: 100%; margin-top: 10%;}
+}
+@media (max-width: 700px){
+	.footer h3 {font-size: 5em;}
+	.footer .address p a {font-size: 16px;}
+	.footer input {font-size: 3vw;}
+	.footer textarea {font-size: 3vw;}
+	.footer button{font-size: 3vw;}
+}
+@media (max-width: 480px){
+	.footer h3 {font-size: 3em;}
+	.footer .address p {font-size: 1.2em;}
+	.footer .address p a {font-size: 14px;}
+}

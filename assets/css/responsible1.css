@@ -1,0 +1,137 @@
+/* all */
+@media (max-width: 680px){
+	.row {padding: 0 20px;}
+}
+
+/* header */
+@media (max-width: 680px){
+	.header {top: 20px; left: 20px;}
+	.header h1 {width: 50px; height: 50px;}
+}
+
+/* nav */
+@media (max-width: 680px){
+	#nav {left: 20px;}
+    .nav ul li a {letter-spacing: 0;}
+}
+
+/* sec1 */
+@media (max-width: 680px){
+	.sec1 .title {right: 20px;}
+}
+
+/* sec2 */
+@media (max-width: 1400px){
+	.sec2 .skill ul li {width: 32%;}
+}
+@media (max-width: 1040px){
+	.sec2 .prof-img {width: 250px; height: 250px;}
+	.sec2 .prof-img .front {width: 250px; height: 250px;}
+
+	.sec2 .prof-txt {font-size: 18px;}
+	.sec2 .prof-txt .ts {font-size: 12px;}
+
+	.sec2 .skill ul li canvas {width: 160px !important; height: 160px !important;}
+	.sec2 .skill ul li a strong {font-size: 45px;}
+	.sec2 .skill ul li a span {font-size: 12px; letter-spacing: -1px;}
+	.sec2 .skill ul li a span:before {font-size: 20px;}
+}
+@media (max-width: 600px){
+	.sec2 .prof-img {width: 200px; height: 200px;}
+	.sec2 .prof-img .front {width: 200px; height: 200px; background-size: 280px;}
+
+	.sec2 .prof-txt {font-size: 14px;}
+
+	.sec2 .skill ul li canvas {width: 120px !important; height: 120px !important;}
+	.sec2 .skill ul li a strong {font-size: 40px;}
+}
+@media (max-width: 480px){
+	.sec2 .prof-img {width: 150px; height: 150px;}
+	.sec2 .prof-img .front {width: 150px; height: 150px; background-size: 200px;}
+
+	.sec2 .skill ul li {width: 48%;}
+}
+@media (max-width: 380px){
+	.sec2 .prof-txt {font-size: 13px;}
+    
+    .sec2 .skill ul li {width: 100%;}
+}
+
+/* sec3 */
+@media (max-width: 1400px){
+    .sec3 .proj .proj-right h3 {font-size: 3em;}
+    .sec3 .proj .proj-right h3 span {font-size: 18px;}
+    .sec3 .proj .proj-right .txt-box p {font-size: 15px;}
+}
+@media (max-width: 1080px){
+    .sec3 .proj-wrap {margin-top: 30%;}
+    .sec3 .proj {margin-top: 30%;}
+    .sec3 .proj .proj-left {float: none; width: 100%;}
+    .sec3 .proj .proj-left img {display: block; width: 95%; margin: 0 auto;}
+    .sec3 .proj .proj-right {float: none; width: 100%; margin-top: 5%; clear: both;}
+    .sec3 .proj .proj-right table {width: 90%;}
+    .sec3 .proj .proj-right .button {margin-left: 5%;}
+}
+@media (max-width: 600px){
+    .sec3 .proj .proj-right h3 {padding-left: 20px;}
+    .sec3 .proj .proj-right .button {margin-left: 20px;}
+    .sec3 .proj .proj-right .txt-box {padding: 0 20px;}
+}
+@media (max-width: 480px){
+    .sec3 .proj .proj-right {margin-top: 3%;}
+    .sec3 .proj .proj-right h3 {padding-left: 0; width: 100%; text-align: center; font-size: 2.5em;}
+    .sec3 .proj .proj-right h3 span {font-size: 16px;}
+    .sec3 .proj .proj-right .txt-box {display: none;}
+    .sec3 .proj .proj-right table {display: none;}
+    .sec3 .proj .proj-right .button {margin-left: 0; margin: 0 auto;}
+}
+@media (max-width: 380px){
+    .sec3 .proj .proj-right h3 {font-size: 2em;}
+    .sec3 .proj .proj-right h3 span {font-size: 15px;}
+}
+
+/* sec4 */
+@media (max-width: 800px){
+    .sec4 .ani-tit {padding-left: 0;}
+    
+    .sec4 .ani-wrap .ani-top {flex-direction: column;}
+    .sec4 .ani-wrap .ani-bottom {flex-direction: column;}
+    .sec4 .ani-wrap .ani {width: 60vw; height: 60vw;}
+    .sec4 .ani-wrap .ani2 {align-self: flex-end;}
+    .sec4 .ani-wrap .ani4 {align-self: flex-end;}
+    .sec4 .ani-wrap .ani figcaption {font-size: 16px;}
+}
+
+/* animation */
+@media (max-width: 800px){
+    .sec4 .ani3 .circle-wrap .circle {width: 4vw; height: 4vw; margin: 0 10px;}
+}
+
+/* sec5 */
+@media (max-width: 1080px){
+	.sec5 .form-tit h2 {font-size: 6em;}
+	.sec5 .form-tit .address p {font-size: 24px;}
+	.sec5 .form-tit .address p a {font-size: 16px;}
+    
+    .sec5 .form {width: 65%;}
+}
+@media (max-width: 900px){
+    .sec5 .form-tit h2 {float: none;}
+	.sec5 .form-tit .address {position: static; margin-top: 3%;}
+	.sec5 .form-tit .address p {display: inline-block; text-align: left; margin-right: 15%;}
+    
+    .sec5 .form {width: 80%;}
+    .sec5 .form button {height: 50px; line-height: 50px;}
+}
+@media (max-width: 630px){
+	.sec5 .form-tit h2 {font-size: 4.5em;}
+	.sec5 .form-tit .address p {font-size: 20px;}
+	.sec5 .form-tit .address p a {font-size: 14px;}
+}
+@media (max-width: 480px){
+	.sec5 .form-tit h2 {font-size: 2.8em;}
+	.sec5 .form-tit .address p {font-size: 18px;}
+    
+    .sec5 .form {width: 90%; margin-top: 15%;}
+    .sec5 .form button {height: 30px; line-height: 30px;}
+}

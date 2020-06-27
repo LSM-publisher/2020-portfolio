@@ -1,0 +1,25 @@
+@charset "utf-8";
+
+@font-face {
+  font-family: 'MonumentExtended-Regular';
+  src: url(../fonts/MonumentExtended-Regular.eot);
+  src: url(../fonts/MonumentExtended-Regular.eot?#iefix) format('embedded-opentype'),
+       url(../fonts/MonumentExtended-Regular.woff) format('woff'),
+       url(../fonts/MonumentExtended-Regular.ttf) format('truetype'),
+       url(../fonts/MonumentExtended-Regular.otf) format('opentype');
+}
+@font-face {
+  font-family: 'MonumentExtended-Ultrabold';
+  src: url(../fonts/MonumentExtended-Ultrabold.eot);
+  src: url(../fonts/MonumentExtended-Ultrabold.eot?#iefix) format('embedded-opentype'),
+       url(../fonts/MonumentExtended-Ultrabold.woff) format('woff'),
+       url(../fonts/MonumentExtended-Ultrabold.ttf) format('truetype'),
+     url(../fonts/MonumentExtended-Ultrabold.otf) format('opentype');
+}
+@font-face {
+ font-family: 'NanumSquare';
+ src: url(../fonts/NanumSquare.eot);
+ src: url(../fonts/NanumSquare.eot?#iefix) format('embedded-opentype'),
+      url(../fonts/NanumSquare.woff) format('woff'),
+      url(../fonts/NanumSquare.ttf) format('truetype');
+}
