@@ -1,0 +1,186 @@
+@charset "utf-8";
+
+body{background:url(../image/bg.jpg);}
+html,body{
+  font-family:'Roboto', sans-serif;
+  font-size:1em;
+  line-height:1.4;
+  height:100%;
+  margin:0;
+  padding:0;
+}
+
+#wrap{width:100%; height:100%;}
+.inner{max-width:640px; margin:0 auto; text-align:center;}
+
+.container{
+  overflow:hidden;
+ *zoom:1;
+}
+
+.site-content{padding-top:70px;}
+
+/*header*/
+.header{
+  position:fixed;
+  left:0;
+  right:0;
+  height:70px;
+  line-height:70px;
+  color:#fff;
+  background-color:#f4f0e7;
+}
+
+.header__logo{
+  padding:0 25px;
+  float:left;
+}
+.header__logo img{width:61px;}
+
+.site-pusher,
+.site-container{height:100%;}
+
+.site-container{overflow: hidden;}
+
+.site-pusher{
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -ms-transform: translateX(0px);
+  -webkit-transform: translateX(0px);
+  transform: translateX(0px);
+}
+
+.site-content{
+  position:absolute;
+  top:70px;
+  right:0;
+  left:0;
+  bottom:0;
+  padding-top:0;
+  overflow-y:scroll;
+  -webkit-overflow-scrolling: touch;
+}
+
+.header{position: static;}
+
+.header__icon{
+  position:relative;
+  display:block;
+  float:right;
+  width:70px;
+  height:70px;
+  cursor:pointer;
+}
+
+.header__icon:after{
+  content:'';
+  position:absolute;
+  display:block;
+  width:1.5em;
+  height:0;
+  top:16px;
+  left:15px;
+  box-shadow:0 7px 0 1px #714135, 0 16px 0 1px #714135, 0 25px 0 1px #714135;
+}
+
+.menu{
+  position:absolute;
+  right:0;
+  top:0;
+  bottom:0;
+  background-color:#f4f0e7;
+  overflow-y:scroll;
+  -webkit-overflow-scrolling: touch;
+  width:200px;
+  -ms-transform: translateX(0px);
+  -webkit-transform: translateX(0px);
+  transform: translateX(0px);
+}
+
+.menu a{
+  display:block;
+  height:50px;
+  text-align:center;
+  line-height:50px;
+  border-bottom:1px solid #714135;
+}
+
+.with--sidebar .site-pusher {
+  -ms-transform: translateX(-200px);
+  -webkit-transform: translateX(-200px);
+  transform: translateX(-200px);
+}
+
+.with--sidebar .site-cache{ 
+  position:absolute;
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+  background-color:rgba(0, 0, 0, 0.6);
+}
+
+/*visual*/
+.visual img{width:100%; margin-top:20px;}
+
+/*quick_menu*/
+.quick_menu{width:100%; margin-top:20px; overflow:hidden;}
+.quick_menu a:first-child{width:50%; display:block; float:left;}
+.quick_menu a:last-child{width:50%; float:right;}
+.quick_menu a img{width:100%;}
+
+/*content*/
+.content{position:absolute; width:100%; height:100%; margin-top:25px;}
+
+/*news*/
+.news{position:relative; width:100%; z-index:9999;} 
+.news img{width:100%;}
+
+/*youtube*/
+.youtube{position:relative; top:-46px;}
+.youtube img{width:100%;}
+
+/*burgermenu*/
+.burgermenu{position:relative; top:-120px;}
+.burgermenu > img{width:100%;}
+
+.burgermenu .bx-wrapper{margin:0 auto;}
+
+.burgermenu > div{width:100%; height:280px; background:#f2ecde;}
+.menu_slide li a{width:100%;}
+.menu_slide li a img:last-child{width:80%; margin:15px auto;}
+.menu_slide li a img{width:100%;}
+.menu_slide{width:100%;}
+
+/*customer*/
+.customer{position:relative; top:-180px; margin-bottom:30px;}
+.customer img{width:100%;}
+
+/*notice*/
+.notice{margin-bottom:60px;}
+.notice .bx-wrapper{width:80%; margin: 0 auto;}
+.notice .bx-wrapper .bx-controls-direction a{top:20%; width:86px; height:71px;}
+.notice .bx-wrapper .bx-prev{left:60px; background:url('../image/prev.png') no-repeat;}
+.notice .bx-wrapper .bx-next{right:35px; background:url('../image/next.png') no-repeat;}
+.notice .bx-wrapper .bx-next:hover,
+.bx-wrapper .bx-next:focus{background-position:0 0;}
+.notice_slide li a img{width:100%;}
+
+/*sns*/
+.sns{position:relative;width:100%; text-align:center;}
+.sns a{width:100%;}
+.sns a img{width:30%;}
+.sns a:first-child{position:relative; left:3.2%;}
+.sns a:last-child{position:relative; right:2.3%;}
+
+
+/*footer*/
+.footer{margin-top:200px; background:url(../image/main/footer_bg.jpg) repeat-x top center; width:100%; height:auto; padding:7%;
+	box-sizing:border-box;
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;}
+.footer ul{font-size:0; margin-bottom:50px;}
+.footer ul li{display:inline-block; margin-right:50px;}
+.footer ul li:last-child{margin-right:0;}
+.footer ul li a{font-size:20px; color:#222;}
+.footer p{font-size:18px; color:#484848; line-height:185%;}
