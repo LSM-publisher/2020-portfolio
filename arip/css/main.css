@@ -1,0 +1,147 @@
+@charset "utf-8";
+
+html,body{word-break: keep-all;}
+
+body {position: relative;}
+
+/* scrolltop */
+#scrollTop {position: absolute; bottom: 6%; right: 35px; display: block; width: 50px; height: 50px; border-radius: 50%; background: #4b71ff; color: #fff; text-align: center; padding-top: 15px;
+    box-sizing:border-box;
+	    -webkit-box-sizing:border-box;
+	    -moz-box-sizing:border-box;
+	    -o-box-sizing:border-box;
+}
+#scrollTop span {position: relative; display: block; width: 10px; height: 1px; background: #fff; transform: rotate(-45deg); margin: 0 0 5px 17px;}
+#scrollTop span:after {content: ''; position: absolute; width: 10px; height: 1px; background: #fff; transform: rotate(90deg); top: 5px; left: 5px;}
+
+.inner{position:relative; width:1200px; margin:0 auto;}
+.content{width:100%; position:relative; margin-bottom:50px;}
+
+/*header*/
+header{width:100%; height:145px; position:fixed; z-index:999999999999999999;}
+header.active{background:#586acb;}
+
+.topsection ul{font-size:0; position:absolute; right:0; top:0;}
+.topsection ul li{display:inline-block; margin-left:8px;}
+.topsection ul li a{font-size:13px; color:#fff;}
+
+/*visual*/
+.pc_visual{width:100%;}
+.pc_visual img{width:100%;}
+.pc_visual .main_slide li {width: 100%;}
+
+.pc_visual .bx-wrapper .bx-pager {bottom: 25%;}
+
+.mobile_visual{width:100%; margin:0 auto; padding-top:50px;}
+.mobile_visual img{width:100%;}
+
+/*news*/
+.news{width:100%;}
+
+.news_title {padding-top:60px; width:22%;}
+.news_title h2{font-size:30px; font-weight:400; margin-bottom:10px;}
+.news_title h2 span{width:56px; height:5px; display:block; background:#000; margin-bottom:18px;}
+.news_title p{line-height:135%; font-size:14px;}
+
+.news_box{position:absolute; overflow: hidden; top:-150px; right:0; width:78%;}
+.news_box > div {position: relative; float:left; width:33.33%; height: 310px; color:#fff; padding:35px 25px;
+    box-sizing:border-box;
+	    -webkit-box-sizing:border-box;
+	    -moz-box-sizing:border-box;
+	    -o-box-sizing:border-box;
+}
+
+.news_box .box1 {background: linear-gradient(to top left, #7a63e7, #83a1d5);}
+.news_box .box2 {background: url(../image/main/box2.jpg) no-repeat top center; background-size: cover;}
+.news_box .box3 {background: linear-gradient(to top left, #5cc3ca, #786de5);}
+
+.news_box > div h3{font-size:40px; font-weight:400; margin-bottom:8px;}
+.news_box > div p{font-size:16px; font-weight:300; line-height:135%;}
+.news_box > div a{position: absolute; right: 25px; bottom: 30px; display:block; margin-top:75px; width: 70px; height: 70px; border: 1px solid #fff; border-radius: 50%;}
+.news_box > div a span {position: relative; display: block; margin: 48% auto; width: 40px; height: 1px; background: #fff;}
+.news_box > div a span:before {content: ''; position: absolute; width: 25px; height: 1px; background: #fff; top: -9px; left: 18px; transform: rotate(45deg);}
+.news_box > div a span:after {content: ''; position: absolute; width: 25px; height: 1px; background: #fff; top: 9px; left: 18px; transform: rotate(-45deg);}
+
+.news_box > div a.kistep {width: 75px; height: 75px; background: #4b71ff; border: 0; color:#fff; font-weight: 300; text-align: center; padding-top: 20px;
+    box-sizing:border-box;
+	    -webkit-box-sizing:border-box;
+	    -moz-box-sizing:border-box;
+	    -o-box-sizing:border-box;
+}
+.news_box > div a.kistep span {width: 25px; margin: 25% auto;}
+.news_box > div a.kistep span:before {width: 15px; top: -5px; left: 12px; transform: rotate(40deg);}
+.news_box > div a.kistep span:after {width: 0; height: 0;}
+
+/*map*/
+.map{margin: 15% 0;}
+.map img{width:100%;}
+.mobile_map{display:none;}
+.mobile_map img{width:100%;}
+
+/*service*/
+.service{width:100%; overflow:hidden;}
+.service h2{font-size:30px; font-weight:400; margin-bottom:50px;}
+.service h2 span{width:56px; height:5px; display:block; background:#000; margin-bottom:18px;}
+
+/*leftbox*/
+.leftbox{float: left; width:45%; margin-top:80px;}
+.leftbox h3{font-size:28px; font-weight:400; margin-bottom:8px;}
+.leftbox p{line-height:135%; font-size:16px; margin-bottom:60px;}
+
+.leftbox .bx-wrapper .bx-pager{bottom: -50px;}
+.leftbox .bx-wrapper .bx-prev,
+.leftbox .bx-wrapper .bx-next{display:none;}
+.leftbox .bx-wrapper .bx-pager.bx-default-pager a{
+	box-shadow:0 2px 3px #ddd;
+}
+
+/*rightbox*/
+.rightbox{overflow: hidden; float: right; width:52%; margin-left:35px;}
+
+.system{position: relative; float:left; width:49.2%; cursor: pointer;}
+.system .picture {overflow: hidden;}
+.system .picture img {display: block; width: 100%; transition:all .5s ease-out;}
+.system:hover .picture img{transform:scale(1.05,1.05);}
+
+.system figure figcaption {position:absolute; top:0; padding:40px 25px;
+	box-sizing:border-box;
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	-o-box-sizing:border-box;
+}
+.system figure figcaption h3{line-height:115%; font-size:28px; font-weight:400; margin-bottom:8px;}
+.system figure figcaption p{font-size:16px;}
+
+.plus{float: right; width:49.2%; position:relative; margin-left:10px; cursor: pointer;}
+.plus .picture {overflow: hidden;}
+.plus .picture img {display: block; width: 100%; transition:all .5s ease-out;}
+.plus:hover img{transform:scale(1.05);}
+
+.plus figure figcaption {position:absolute; top:0; padding:40px 25px;
+	box-sizing:border-box;
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	-o-box-sizing:border-box;
+}
+.plus figure figcaption h3{line-height:115%; font-size:28px; font-weight:400; margin-bottom:8px;}
+.plus figure figcaption p{font-size:16px; line-height: 135%;}
+
+.icon{width: 100%; float: left; margin-top: 30px;}
+.icon ul{font-size:0; text-align:center;}
+.icon ul li{display:inline-block; margin:0 40px;}
+.icon ul li p{font-size:16px; text-align:center; margin-top:8px;}
+
+/*banner*/
+.banner{width:100%; margin: 10% 0;}
+.banner .banner_slide li {margin: 0 10px;}
+.banner .bx-wrapper{margin:0 auto;}
+.banner .bx-wrapper .bx-pager{display:none;}
+.banner .bx-wrapper .bx-prev {left: -35px;}
+.banner .bx-wrapper .bx-next {right: -60px;}
+
+/*footer*/
+footer{width:100%; height:155px; background:#303030; overflow:hidden;}
+footer .inner div{float:left;}
+footer .inner div h1{margin-bottom:10px;}
+footer .inner div p{color:#fff; line-height:135%; font-size:14px;}
+footer h2{float:right; padding:30px 0; text-align:right; font-size:30px; color:#fff; line-height:135%; font-weight:300;}

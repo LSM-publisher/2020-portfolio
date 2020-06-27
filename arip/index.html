@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+		<meta name="format-detection" content="telephone=no">
+		<meta name="author" content="이상미">
+        <meta name="description" content="ARIP 리디자인 반응형 웹사이트입니다.">
+        <meta name="keywords" content="ARIP, 강릉과학산업진흥원">
+		<title>ARIP</title>
+		
+		<link rel="stylesheet" type="text/css" href="css/reset.css"/>
+		<link rel="stylesheet" type="text/css" href="css/nav.css">
+		<link rel="stylesheet" type="text/css" href="css/jquery.bxslider.css"/>
+		<link rel="stylesheet" type="text/css" href="css/responsible.css"/>
+
+		<script src="js/jquery.min_1.12.4.js"></script>
+		<script src="js/jquery.slicknav.js"></script>
+
+		<!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+		<!--[if lt IE 9]> <script src="http://ie7-js.googlecode.com/svn/version/2.1(beta4)/IE9.js"></script> <![endif]-->
+		<!--[if lt IE 9]> <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script><![endif]-->
+		<!--[if lt IE 9]>
+		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<script>
+		document.createElement('header');
+		document.createElement('nav');
+		document.createElement('section');
+		document.createElement('article');
+		document.createElement('aside');
+		document.createElement('footer');
+		document.createElement('hgroup');
+		</script>
+		<![endif]-->
+		<script>
+		    $(document).ready(function(){
+			   $('#menu').slicknav();
+
+			   $(window).on("scroll", function() {
+					if($(window).scrollTop() > 300) {
+						$("header").addClass("active");
+					} else {
+					    $("header").removeClass("active");
+					}
+				});
+
+			});
+	    </script>
+	</head>
+ <body>
+    <!--header(s)-->
+    <header>
+		<!-- nav -->
+		<nav class="nav">
+			<div class="inner">
+				<h1><a href="index.html"><img src="image/logo.jpg" alt="logo"></a></h1>
+
+			<!--topsection(s)-->
+			<div class="topsection">
+				<ul>
+					<li><a href="#">HOME</a></li>
+					<li><a href="#" data-remodal-target="modal_login">로그인</a></li>
+					<li><a href="#" data-remodal-target="modal_register">회원가입</a></li>
+				</ul>
+			</div>
+			<!--//topsection(e)-->
+
+				<ul class="nav-list" id="menu">
+					<li class="in_menu01"><a href="#">연구개발지원단</a>
+						<ul>
+								<li><a href="#">전국연구개발지원단</a></li>
+						</ul>
+					</li>
+					<li class="in_menu02"><a href="#">과학기술통계자료</a>
+						<ul>
+							<li><a href="#">국가 R&#38;D</a></li>
+							<li><a href="#">지역 R&#38;D</a></li>
+						</ul>
+					</li>
+					<li class="in_menu03"><a href="#">정보마당</a>
+						<ul>
+							<li><a href="#">연지단 성과물</a></li>
+							<li><a href="#">연지단우수성과 연구개발지원단</a></li>
+							<li><a href="#">홍보물 연구개발지원단</a></li>	
+							<li><a href="#">뉴스레터</a></li>	
+						</ul>
+					</li>
+					<li class="in_menu04"><a href="#">정책자료</a>
+					    <ul>
+							<li><a href="#">연구개발지원단 정책자료</a></li>
+							<li><a href="#">이슈페이퍼</a></li>
+							<li><a href="#">키스텝 정책자료</a></li>	
+							<li><a href="#">정부부처 정책자료</a></li>	
+						</ul>
+					</li>
+					<li class="in_menu05"><a href="#">지역R&#38;D정보포털</a>
+					    <ul>
+							<li><a href="#">시스템 소개</a></li>
+							<li><a href="#">공지사항</a></li>	
+							<li><a href="#">Q&#38;A</a></li>	
+						</ul>
+					</li>
+				</ul>
+			</div>
+			<div id="smenu_bar"></div>
+		</nav>
+		<!-- //nav -->
+		
+		<!-- mobile_menu -->
+		<div id="mobile_menu">
+			<h1><a href="index.html"><img src="image/mobile_logo.png" alt="logo"></a></h1>
+		</div>
+		<!-- //mobile_menu -->
+	</header>
+	<!--header(e)-->
+	
+	<!--pc_visual(s)-->
+	<div class="pc_visual">
+		<ul class="main_slide">
+			<li><img src="image/main/pc_visual1.jpg" alt="비주얼 이미지1"></li>
+			<li><img src="image/main/pc_visual2.jpg" alt="비주얼 이미지2"></li>
+			<li><img src="image/main/pc_visual3.jpg" alt="비주얼 이미지3"></li>
+		</ul>
+	</div>
+	<!--pc_visual(e)-->
+
+	<!--mobile_visual(s)-->
+	<div class="mobile_visual">
+		<ul class="mvisual">
+			<li><img src="image/main/mvisual1.jpg" alt="모바일 비주얼 이미지1"></li>
+			<li><img src="image/main/mvisual2.jpg" alt="모바일 비주얼 이미지2"></li>
+			<li><img src="image/main/mvisual3.jpg" alt="모바일 비주얼 이미지3"></li>
+		</ul>
+	</div>
+	<!--pc_visual(e)-->
+
+	<!--news-->
+	<div class="news">
+		<div class="inner">
+			<div class="news_title" data-aos="fade-up" data-aos-duration="1000">
+				<h2><span></span>NEWS</h2>
+				<p>ARiP의 다양한 소식과 정확한 업무를 <br>위한 프로그램을 제공합니다.</p>
+			</div>
+			<div class="news_box">
+				<div class="box1">
+                    <h3>NOTICE</h3>
+                    <p>매일 새롭게 올라오는 소식을 <br>확인하세요.</p>
+                    <a href="#"><span></span></a>
+				</div>
+				<div class="box2">
+                    <h3>LIBRARY</h3>
+                    <p>국가와 각 지역의 R&#38;D 사업 공고를 <br>확인할 수 있습니다.</p>
+                    <a href="#"><span></span></a>
+				</div>
+				<div class="box3">
+                    <h3>KISTEP <br>업무지원</h3>
+                    <p>각 지역의 기관과 연계하여 다양한 정보와 폭넓은 업무를 지원합니다.</p>
+                    <a href="#" class="kistep">LOGIN<span></span></a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--//news-->
+
+	<!--content(s)-->
+	<div class="content">
+		<div class="inner">
+
+			<!--map-->
+			<div class="map">
+				<img src="image/main/map.jpg" alt="map">
+			</div>
+			<div class="mobile_map">
+				<img src="image/main/mobile_map.jpg" alt="mobile map">
+			</div>
+			<!--//map-->
+
+			<!--service(s)-->
+			<div class="service">
+				<h2 data-aos="fade-up" data-aos-duration="1000"><span></span>SERVICE</h2>
+				<div class="leftbox">
+					<div>
+						<h3>DATA ANALYSIS</h3>
+						<p>주요 연구개발 사업비 현황을 확인하세요.</p>
+						<ul class="data_slide">
+							<li><img src="image/main/data.jpg" alt="그래프"></li>
+							<li><img src="image/main/data.jpg" alt="그래프"></li>
+						</ul>
+					</div>
+				</div>
+				<div class="rightbox">
+                    <div class="system">
+                        <figure>
+                            <div class="picture">
+                                <img src="image/main/systembox.jpg" alt="소개 이미지">
+                            </div>
+                            <figcaption>
+                                <h3>SYSTEM<br>INTRODUCE</h3>
+                                <p>포털 소개 페이지로 이동합니다.</p>
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <div class="plus">
+                        <figure>
+                            <div class="picture">
+                                <img src="image/main/plusbox.jpg" alt="함께 이미지">
+                            </div>
+                            <figcaption>
+                                <h3>함께<br>PLUS</h3>
+                                <p>외부 사용자가 보다 편리하게 사용할 수 있는 사이트로 이동합니다.</p>
+                            </figcaption>
+                        </figure>
+                    </div>
+					<div class="icon">
+						<ul>
+							<li>
+								<a href="#"><img src="image/main/icon1.png" alt="아이콘"></a>
+								<p>홍보물</p>
+							</li>
+							<li>
+								<a href="#"><img src="image/main/icon2.png" alt="아이콘"></a>
+								<p>자료실</p>
+							</li>
+							<li>
+								<a href="#"><img src="image/main/icon3.png" alt="아이콘"></a>
+								<p>뉴스레터</p>
+							</li>
+							<li>
+								<a href="#"><img src="image/main/icon4.png" alt="아이콘"></a>
+								<p>Q&#38;A</p>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<!--service(e)-->
+		</div>
+	</div>
+	<!--content(e)-->
+
+	<!--banner-->
+	<div class="banner">
+		<div class="inner">
+			<ul class="banner_slide">
+				<li class="slide"><a href="#"><img src="image/banner1.jpg" alt="배너 아이콘"></a></li>
+				<li class="slide"><a href="#"><img src="image/banner2.jpg" alt="배너 아이콘"></a></li>
+				<li class="slide"><a href="#"><img src="image/banner3.jpg" alt="배너 아이콘"></a></li>
+				<li class="slide"><a href="#"><img src="image/banner4.jpg" alt="배너 아이콘"></a></li>
+			</ul>
+		</div>
+	</div>
+	<!--//banner-->
+
+    <a href="#" id="scrollTop"><span></span>TOP</a>
+
+	<!--footer(s)-->
+	<footer>
+		<div class="inner">
+			<div>
+				<h1><a href="#"><img src="image/footer_logo.png" alt="푸터 로고"></a></h1>
+				<p>Copyright (c) 2019 ARIP All right reserved.<br>강원도 강릉시 과학단지로 106-11 (재)강릉과학산업진흥원</p>
+			</div>
+			<h2>전화 안내 <br>033-650-3320</h2>
+		</div>
+	</footer>
+	<!--footer(e)-->
+
+	<script src="js/jquery.bxslider.js"></script>
+	<script>
+	$(function(){
+		// 대메뉴에서 특정 버튼에 마우스온할때
+		$("#menu > li > a").mouseover(function(){
+			$('#menu > li > ul').slideDown('fast');
+			$("#smenu_bar").slideDown();
+		});
+
+		// 메뉴에서 마우스가 빠져나가면 메뉴를 닫는다
+		$(".nav").mouseleave(function(){
+			$('#menu > li > ul').fadeOut('fast');
+			$('#smenu_bar').fadeOut('fast');
+		});
+
+		//메인 bx슬라이드
+		 $('.main_slide').bxSlider({
+			  auto: true,
+			  autoControls: false,
+              responsive: true,
+		});
+
+		//모바일 bx슬라이드
+		$(".mvisual").bxSlider({
+			  auto: true,
+			  autoControls: false,
+              responsive: true,
+		});
+
+		//그래프 bx슬라이드
+		 $('.data_slide').bxSlider({
+			  auto: true,
+			  autoControls: false,
+			  pause: 4000,
+              responsive: true,
+		});
+
+		//배너 슬라이드
+		$('.banner_slide').bxSlider({
+            slideWidth: 250,
+            minSlides: 2,
+            maxSlides: 4,
+            moveSlides: 1,
+            responsive: true,
+		});
+
+		//스크롤탑
+		$("#scrollTop").on("click",function(){
+			$("html,body").animate({
+				scrollTop : 0
+			},600);
+			return false;
+		});	
+	});
+	</script>
+ </body>
+ </html>
