@@ -1,0 +1,121 @@
+@charset "utf-8";
+
+/*header*/
+@media screen and (max-width:414px){
+	.header__logo img{width:51px;}
+}
+
+/*youtube*/
+@media screen and (max-width:640px){
+	.youtube{top:-38px;}
+}
+@media screen and (max-width:520px){
+	.youtube{top:-30px;}
+}
+@media screen and (max-width:460px){
+	.youtube{top:-26px;}
+}
+@media screen and (max-width:360px){
+	.youtube{top:-20px;}
+}
+
+/*burgermenu*/
+@media screen and (max-width:640px){
+	.burgermenu{top:-95px;}
+}
+@media screen and (max-width:520px){
+	.burgermenu{top:-73px;}
+}
+@media screen and (max-width:460px){
+	.burgermenu .bx-wrapper{width:80%;}
+	.burgermenu{top:-64px;}
+}
+@media screen and (max-width:420px){
+	.burgermenu > div{height:210px;}
+}
+@media screen and (max-width:360px){
+	.burgermenu > div{height:185px;}
+	.burgermenu{top:-50px;}
+}
+
+/* customer */
+@media screen and (max-width:640px){
+	.customer{top:-140px;}
+}
+@media screen and (max-width:420px){
+	.customer{top:-90px;}
+}
+@media screen and (max-width:360px){
+	.customer{top:-75px;}
+}
+
+/*notice*/
+@media screen and (max-width:640px){
+	.notice .bx-wrapper .bx-prev{left:60px;}
+	.notice .bx-wrapper .bx-next{right:20px;}
+}
+@media screen and (max-width:540px){
+	.notice .bx-wrapper .bx-prev{left:30px;}
+	.notice .bx-wrapper .bx-next{right:0;}
+}
+@media screen and (max-width:420px){
+	.notice{margin-bottom:40px;}
+	.notice .bx-wrapper .bx-prev{left:10px;}
+	.notice .bx-wrapper .bx-next{right:-20px;}
+}
+@media screen and (max-width:320px){
+	.notice .bx-wrapper .bx-prev{left:5px;}
+	.notice .bx-wrapper .bx-next{right:-30px;}
+}
+
+/*about_burgerking*/
+@media screen and (max-width:640px){
+	#tab1 p{font-size:16px;}
+	.global2{margin-bottom:180px;}
+}
+@media screen and (max-width:480px){
+	#tab1 p{font-size:15px;}
+	.global1{margin-top:30px;}
+	.global2{margin-bottom:130px;}
+	.korea{margin-top:30px;}
+}
+@media screen and (max-width:380px){
+	.tab_container{margin-top:60px;}
+	#tab1 p.txtbox{width:100%;}
+}
+@media screen and (max-width:320px){
+	#tab1 p{font-size:14px;}
+	.global1{margin:25px 0;}
+	.korea{margin-top:25px;}
+}
+
+/*history*/
+@media screen and (max-width:600px){
+	#tab2 ul{padding-top:320px;}
+}
+@media screen and (max-width:480px){
+	#tab2 ul{padding-top:230px;}
+	#tab2 ul li{margin:20px 0;}
+	#tab2 ul li p{font-size:16px; margin-left:20px;}
+}
+@media screen and (max-width:380px){
+	#tab2 ul{padding-top:180px;}
+	#tab2 ul li p{font-size:14px;}
+}
+
+/*footer*/
+@media screen and (max-width:580px){
+	.footer ul li{margin-right:20px;}
+}
+@media screen and (max-width:480px){
+	.footer{margin-top:150px;}
+	.footer ul li a{font-size:16px;}
+	.footer p{font-size:14px;}
+}
+@media screen and (max-width:400px){
+	.footer ul li{margin-right:10px;}
+}
+@media screen and (max-width:360px){
+	.footer ul li a{font-size:14px;}
+	.footer p{font-size:13px;}
+}
