@@ -1,0 +1,264 @@
+@charset "utf-8";
+
+/* layout */
+#header {position: relative; width: 100%; height: 60px; background: #000; line-height: 52px;}
+#nav {position: absolute; top: 0; left: -300px; width: 300px; height: 100%; background: #000; z-index: 999;}
+#nav.on {left: 0; transition: left 0.3s ease-out;}
+#footer {width: 100%; background: #181618;}
+
+/* container */
+.container {width: 1200px; margin: 0 auto;}
+
+/* row */
+.row {padding: 0 30px;}
+
+/* ad-part */
+.ad-part {width: 100%; height: 30px; background: #f2e511; text-align: center; line-height: 30px;}
+.ad-part p {font-size: 13px; font-weight: 700; letter-spacing: 5px;}
+
+/* header */
+.header h1 {text-align: center;}
+.header h1 img {width: 48px;}
+
+.header ul {position: absolute; top: 3px; right: 30px;}
+.header ul li {display:inline-block; margin-left: 18px;}
+.header ul li a img {width: 22px;}
+
+.header .hamburger {
+    position: absolute; left: 30px; top: 23px;
+    cursor: pointer;
+    width: 28px;
+    height: 20px;
+    z-index: 9999;
+}
+.header .hamburger > div {
+    height: 2px;
+    background-color: #fff;
+    transition: 0.25s margin 0.25s, 0.25s transform;
+}
+.header .hamburger > div:nth-child(1) {margin-bottom: 5px;}
+.header .hamburger > div:nth-child(3) {margin-top: 5px;}
+
+.header .hamburger.active > div {transition: 0.25s margin, 0.25s transform 0.25s;}
+.header .hamburger.active > div:nth-child(1) {
+    margin-top: 5px;
+    margin-bottom: -2px;
+    transform: rotate(45deg);
+}
+.header .hamburger.active > div:nth-child(2) {transform: rotate(45deg); opacity: 0;}
+.header .hamburger.active > div:nth-child(3) {
+    margin-top: -2px;
+    transform: rotate(135deg);
+}
+
+/* nav */
+.nav {padding: 290px 0 0 30px;}
+.nav ul li {font-size: 32px; padding: 10px 0;}
+.nav ul li a {display: block; color: #fff; font-weight: 300;}
+.nav ul li:last-child a {color: blue;}
+.nav ul li a:hover {opacity: 0.7; transition: all 0.3s;}
+
+/* slider */
+.slider .s1 {width: 100%; height: 815px; background: url(../image/main/slider_img.jpg) no-repeat top right; background-size: cover; padding-left: 8%; box-sizing: border-box;}
+.slider .s1 h2 {color: #fff; font-size: 80px; text-shadow: 5px 5px 0 #000; line-height: 100%; margin-top: 200px;}
+.slider .s1 h2 span {display: block; font-size: 68px;}
+.slider .s1 > p {color: #fff; font-size: 16px; margin: 30px 0; line-height: 150%;}
+
+.slider .slick-prev {
+	position: absolute; right: 75px; bottom: 0; z-index: 1000;
+	width: 75px; height: 75px;
+	display: inline-block;
+	background: url(../image/arrows.jpg) no-repeat 0 0;
+    text-indent: -9999px;
+    border: 0;
+    cursor: pointer;
+}
+.slider .slick-next {
+	position: absolute; right: 0; bottom: 0; z-index: 1000;
+	width: 75px; height: 75px;
+	display: inline-block;
+	background: url(../image/arrows.jpg) no-repeat -74px 0;
+    text-indent: -9999px;
+    border: 0;
+    cursor: pointer;
+}
+
+.button {border: 2px solid #000; width: 200px; height: 55px; line-height: 50px; text-align: center; cursor: pointer; background: transparent;}
+.button p {position: relative; color: #fff; font-weight: 600; letter-spacing: 5px; margin-right: 18px;}
+.button p span {position: absolute; top: 48%; right: 9%; display: block; width: 13px; height: 2px; background: #fff;}
+.button p span:before {content: ''; position: absolute; width: 7px; height: 2px; background: #fff; top: -2px; transform: rotate(45deg);}
+.button p span:after {content: ''; position: absolute; width: 7px; height: 2px; background: #fff; top: 2px; transform: rotate(-45deg);}
+
+.button:hover {background: #000; transition: all 0.3s;}
+
+/* banner */
+.banner {overflow: hidden; margin: 50px 0;}
+.banner div a {position: relative; display: block; width: 150px; height: 150px; border-radius: 50%; margin: 0 auto;}
+.banner div a:before {content: ''; position: absolute; top: 0; left: 0; width: 150px; height: 150px; background: #fff; opacity: 0;}
+.banner div a:after {content: 'GO'; position: absolute; top: 50%; left: 50%; font-size: 18px; color: #fff; width: 70px; height: 70px; line-height: 70px; background: #000; border-radius: 50%; transform: translate(-50%, -50%); opacity: 0; text-align: center;}
+.banner div a.c1 {background: url(../image/main/circle_img1.png) no-repeat top center;}
+.banner div a.c2 {background: url(../image/main/circle_img2.png) no-repeat top center;}
+.banner div a.c3 {background: url(../image/main/circle_img3.png) no-repeat top center;}
+.banner div a.c4 {background: url(../image/main/circle_img4.png) no-repeat top center;}
+.banner div a.c5 {background: url(../image/main/circle_img5.png) no-repeat top center;}
+.banner div a.c6 {background: url(../image/main/circle_img6.png) no-repeat top center;}
+
+.banner div p {text-align: center; margin: 15px 0 0 6px; font-size: 15px; letter-spacing: 6px; font-weight: 600; color: #000; cursor: pointer; line-height: 135%;}
+.banner div p span {display: block;}
+
+.banner div a:hover:before {opacity: 0.6; transition: all 0.5s ease-out;}
+.banner div a:hover:after {opacity: 1; transition: all 0.3s ease-out;}
+
+/* sec1 */
+.sec1 {position: relative; margin: 180px 0; height: 100%;}
+.sec1 .col_bg {position: absolute; right: 0; width: 68%; height: 680px; background: url(../image/main/adi_bg.jpg) no-repeat top right; z-index: -1; background-size: cover;}
+.sec1 .col {overflow: hidden; width: 100%; padding-top: 45px;}
+
+.sec1 .col .col1 {float: left; width: 32.8%; padding: 5px; margin-right: 10px;}
+.sec1 .col .col1 a {position: relative; display: block; width: 100%; height: 580px; background: url(../image/main/adidas_jkoo.jpg) no-repeat center left; background-size: cover; box-shadow: 8px 8px 0 rgba(255,255,255,0);}
+.sec1 .col .col1 a:after {content: ''; position: absolute; top: 0; left: 0; width: 100%; height: 580px; background: #fff; opacity: 0;}
+.sec1 .col .col1 a p {position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); font-size: 18px; font-weight: 500; color: #000; text-align: center; border: 2px solid #000; width: 90%; height: 100px; letter-spacing: 5px; padding: 23px 0; box-sizing: border-box; line-height: 25px; opacity: 0; z-index: 1;}
+
+.sec1 .col .col2 {float: left; width: 32.8%; padding: 5px;}
+.sec1 .col .col2 a {position: relative; display: block; width: 100%; height: 580px; background: url(../image/main/adidas_winter.jpg) no-repeat top left; background-size: cover; box-shadow: 8px 8px 0 rgba(0,0,0,0);}
+.sec1 .col .col2 a:after {content: ''; position: absolute; top: 0; left: 0; width: 100%; height: 580px; background: #000; opacity: 0;}
+.sec1 .col .col2 p {position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); font-size: 18px; font-weight: 500; color: #fff; text-align: center; border: 2px solid #fff; width: 90%; height: 100px; letter-spacing: 5px; padding: 23px 0; box-sizing: border-box; line-height: 25px; opacity: 0; z-index: 1;}
+
+.sec1 .col .col1:hover a {transform: translate(-5px, -5px); transition: all 0.3s ease-out; box-shadow: 8px 8px 0 rgba(255,255,255,1);}
+.sec1 .col .col1:hover a:after {opacity: 0.8; transition: all 0.3s ease-out;}
+.sec1 .col .col1:hover a p {opacity: 1; transition: all 0.3s ease-out;}
+
+.sec1 .col .col2:hover a {transform: translate(-5px, -5px); transition: all 0.3s ease-out; box-shadow: 8px 8px 0 rgba(0,0,0,1);}
+.sec1 .col .col2:hover a:after {opacity: 0.8; transition: all 0.3s ease-out;}
+.sec1 .col .col2:hover a p {opacity: 1; transition: all 0.3s ease-out;}
+
+/* sec2 */
+.sec2 {overflow: hidden; margin-bottom: 180px;}
+
+.sec2 .prom1 {overflow: hidden; float: left; width: 50%; cursor: pointer;}
+.sec2 .prom1 figure {width: 100%; height: 435px; background: url(../image/main/adidas_ultra.jpg) no-repeat center left; background-size: cover;}
+.sec2 .prom1 figcaption {position: relative; padding: 25px;}
+.sec2 .prom1 figcaption strong {display: block; font-weight: 600; font-size: 28px; margin-bottom: 10px;}
+.sec2 .prom1 figcaption span {font-size: 18px;}
+.sec2 .prom1 figcaption a {position: absolute; top: 30px; right: 25px; display: block; width: 30px; height: 30px;}
+.sec2 .prom1 figcaption a:before {content: ''; position: absolute; top: 10px; right: 0; width: 15px; height: 1px; background: #000; transform: rotate(45deg);}
+.sec2 .prom1 figcaption a:after {content: ''; position: absolute; top: 20px; right: 0; width: 15px; height: 1px; background: #000; transform: rotate(-45deg);}
+
+.sec2 .prom2 {float: left; width: 50%; cursor: pointer;}
+.sec2 .prom2 figure {width: 100%; height: 435px; background: url(../image/main/adidas_cal.jpg) no-repeat bottom right; background-size: cover;}
+.sec2 .prom2 figcaption {position: relative; padding: 25px;}
+.sec2 .prom2 figcaption strong {display: block; font-weight: 600; font-size: 28px;}
+.sec2 .prom2 figcaption strong span {display: block;}
+.sec2 .prom2 figcaption a {position: absolute; top: 30px; right: 25px; display: block; width: 30px; height: 30px;}
+.sec2 .prom2 figcaption a:before {content: ''; position: absolute; top: 10px; right: 0; width: 15px; height: 1px; background: #000; transform: rotate(45deg);}
+.sec2 .prom2 figcaption a:after {content: ''; position: absolute; top: 20px; right: 0; width: 15px; height: 1px; background: #000; transform: rotate(-45deg);}
+
+.sec2 .prom1 figcaption strong:hover {text-decoration: underline;}
+.sec2 .prom2 figcaption strong:hover {text-decoration: underline;}
+
+/* sec3 */
+.sec3 {margin: 180px 0;}
+
+.sec3 figure {overflow: hidden;}
+.sec3 img:hover {transform: scale(1.1); transition: 0.3s ease-in;}
+
+.sec3 h2 {text-align: center; letter-spacing: 5px;}
+.sec3 .best-seller {overflow: hidden; margin-top: 30px; padding: 0 25px;}
+.sec3 .best-seller img {width: 98%; margin: 0 auto; cursor: pointer;}
+
+.sec3 .best-seller .infor {padding: 10px 20px; line-height: 170%; box-sizing: border-box;}
+.sec3 .best-seller .infor a {display: block; font-weight: 600; color: #000; font-size: 18px;}
+.sec3 .best-seller .infor span {display: block; color: #999c9f; font-size: 13px; cursor: pointer;}
+
+.sec3 .infor {padding: 10px 20px; line-height: 150%; box-sizing: border-box;}
+.sec3 .infor a {display: block; font-weight: 600; color: #000;}
+.sec3 .infor span {display: block; color: #999c9f; font-size: 13px; cursor: pointer;}
+
+.sec3 .infor a:hover {text-decoration: underline;}
+.sec3 .infor span:hover {text-decoration: underline;}
+
+.best-seller .slick-prev {
+	position: absolute; top: 38%; left: 0; z-index: 1000;
+	width: 15px; height: 25px;
+	display: inline-block;
+	background: url(../image/slide_arrow.png) no-repeat 0 0;
+    text-indent: -9999px;
+    border: 0;
+    cursor: pointer;
+}
+.best-seller .slick-next {
+	position: absolute; top: 38%; right: 0; z-index: 1000;
+	width: 15px; height: 25px;
+	display: inline-block;
+	background: url(../image/slide_arrow.png) no-repeat -37px 0;
+    text-indent: -9999px;
+    border: 0;
+    cursor: pointer;
+}
+
+.sec3 .men {position: relative; overflow: hidden; margin-top: 100px; padding-right: 22px; box-sizing: border-box;}
+.sec3 .men h3 {float: left; height: 13%; font-size: 30px; transform: rotate(-90deg); margin-top: 9%;}
+.sec3 .men .line {position: absolute; top: 30%; left: 9.8%; z-index: -1;}
+.sec3 .men .line span {display: block; width: 40px; height: 5px; background: #194fd7; margin: 6px 0;}
+.sec3 .men-slider {float: right; width: 86.7%;}
+.sec3 .men-slider img {width: 98%; cursor: pointer; margin: 0 auto;}
+
+.sec3 .women {position: relative; overflow: hidden; margin: 50px 0; padding-right: 22px; box-sizing: border-box;}
+.sec3 .women h3 {float: left; height: 13%; font-size: 30px; transform: rotate(-90deg); margin-top: 9%; margin-left: -20px;}
+.sec3 .women .line {position: absolute; top: 30%; left: 9.8%; z-index: -1;}
+.sec3 .women .line span {display: block; width: 40px; height: 5px; background: #bf1919; margin: 6px 0;}
+.sec3 .women-slider {float: right; width: 86.7%;}
+.sec3 .women-slider img {width: 98%; cursor: pointer; margin: 0 auto;}
+
+.sec3 .kids {position: relative; overflow: hidden; padding-right: 22px; box-sizing: border-box;}
+.sec3 .kids h3 {float: left; height: 13%; font-size: 30px; transform: rotate(-90deg); margin-top: 9%; margin-left: 15px;}
+.sec3 .kids .line {position: absolute; top: 30%; left: 9.8%; z-index: -1;}
+.sec3 .kids .line span {display: block; width: 40px; height: 5px; background: #3d6400; margin: 6px 0;}
+.sec3 .kids-slider {float: right; width: 86.7%;}
+.sec3 .kids-slider img {width: 98%; cursor: pointer; margin: 0 auto;}
+
+/* sec4 */
+.sec4 {margin-bottom: 180px;}
+
+.sec4 h2 {text-align: center; letter-spacing: 5px; margin-bottom: 30px;}
+.sec4 a img {width: 100%; margin-bottom: 3px;}
+.sec4 a {display: inline-block; width: 19.7%;}
+.sec4 a:hover img {opacity: 0.6; transition: 0.3s ease-in;}
+
+/* sec5 */
+.sec5 {position: relative; margin-bottom: 180px;}
+.sec5 .adi_bg {width: 75%; height: 680px; background: url(../image/main/adiclub.jpg) no-repeat top left; background-size: cover;}
+
+.sec5 .button {position: absolute; top: 50%; right: 5%;}
+.sec5 .button p {color: #000; letter-spacing: 10px;}
+.sec5 .button p span {background: #000;}
+.sec5 .button p span:before {background: #000;}
+.sec5 .button p span:after {background: #000;}
+
+.sec5 .button:hover p {color: #fff;}
+.sec5 .button:hover p span {background: #fff;}
+.sec5 .button:hover p span:before {background: #fff;}
+.sec5 .button:hover p span:after {background: #fff;}
+
+/* footer */
+.footer {padding: 30px 0;}
+.footer .footer_top {overflow: hidden; padding: 50px 0; border-bottom: 1px solid #2a2a2a;}
+.footer .footer_top .f_menu {float: left; width: 70%;}
+.footer .footer_top .f_menu li {display: inline-block; margin-right: 80px;}
+.footer .footer_top .f_menu li a {font-size: 18px; color: #fff; font-weight: 500; line-height: 30px;}
+.footer .footer_top .sns {float: right; width: 30;}
+.footer .footer_top .sns li a {margin: 0 2px;}
+
+.footer .footer_top .f_menu li a:hover {text-decoration: underline;}
+.footer .footer_top .sns li a:hover {opacity: 0.6; transition: 0.3s;}
+
+.footer .footer_btm {padding: 50px 0;}
+.footer .footer_btm address {font-style: normal;}
+.footer .footer_btm p {color: #eee; font-weight: 300; text-align: center; line-height: 135%;}
+
+.footer .footer_btm ul {margin-top: 50px; text-align: center;}
+.footer .footer_btm ul li a {position: relative; display: inline-block; color: #999; margin: 0 30px;}
+.footer .footer_btm ul li a:after {content: ''; position: absolute; width: 1px; height: 15px; background: #ddd; top: 5px; right: -32px;}
+.footer .footer_btm ul li a:last-child:after{width: 0;}
+
+.footer .footer_btm ul li a:hover {text-decoration: underline;}

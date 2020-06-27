@@ -1,0 +1,198 @@
+@charset "utf-8";
+
+/* all */
+@media (max-width: 1920px){
+    .row {padding: 0;}
+}
+@media (max-width: 1200px){
+    .container {width: 100%;}
+    .row {padding: 0 30px;}
+}
+@media (max-width: 480px){
+    .row {padding: 0 20px;}
+}
+
+/* header */
+@media (max-width: 800px){
+    #nav {top: 90px;}
+    .nav {padding-top: 180px;}
+}
+@media (max-width: 480px){
+    .header .hamburger {left: 20px;}
+    .header ul {right: 20px;}
+    .header ul li {margin-left: 12px;}
+    .header ul li a img {width: 20px;}
+    
+    .nav {padding-top: 150px;}
+}
+
+/* slider */
+@media (max-width: 1200px){
+    .slider .s1 {height: 580px;}
+    .slider .s1 h2 {font-size: 60px; margin-top: 120px;}
+    .slider .s1 h2 span {font-size: 48px;}
+    .slider .s1 > p {font-size: 14px;}
+
+    .slider .slick-prev {right: 60px; width: 60px; height: 60px; background: url(../image/arrows.jpg) no-repeat -7px -7px;}
+    .slider .slick-next {width: 60px; height: 60px; background: url(../image/arrows.jpg) no-repeat -84px -7px;}
+
+    .button {width: 180px; height: 50px; line-height: 45px;}
+    .button p {margin-right: 18px;}
+    .button p span {right: 4%;}
+    }
+@media (max-width: 600px){
+    .slider .s1 {height: 480px;}
+    .slider .s1 h2 {margin-bottom: 30px;}
+    .slider .s1 > p {display: none;}
+}
+@media (max-width: 480px){
+    .slider .s1 {padding-left: 20px;}
+    .slider .s1 h2 {font-size: 50px; text-shadow: 3px 3px 0 #000;}
+    .slider .s1 h2 span {font-size: 42px;}
+    
+    .button {height: 45px; line-height: 40px;}
+}
+@media (max-width: 360px){
+    .slider .s1 {height: 450px;}
+}
+
+/* banner */
+@media (max-width: 700px){
+    .banner div a {width: 130px; height: 130px;}
+    .banner div p {font-size: 14px;}
+}
+
+/* sec1 */
+@media (max-width: 1200px){
+    .sec1 .col_bg {width: 80%;}
+}
+@media (max-width: 950px){
+    .sec1 .col_bg {width: 100%; height: 600px;}
+    .sec1 .col {padding-top: 5px;}
+    
+    .sec1 .col .col1 {width: 42%; margin-left: 5.8%;}
+    .sec1 .col .col2 {width: 42%;}
+}
+@media (max-width: 750px){
+    .sec1 .col_bg {height: 500px;}
+    
+    .sec1 .col .col1 a {height: 480px;}
+    .sec1 .col .col1 a:after {height: 480px;}
+    .sec1 .col .col1 a p {font-size: 15px;}
+    .sec1 .col .col2 a {height: 480px;}
+    .sec1 .col .col2 a:after {height: 480px;}
+    .sec1 .col .col2 a p {font-size: 15px;}
+}
+@media (max-width: 640px){
+    .sec1 {margin: 150px 0;}
+    .sec1 .row {padding: 0;}
+    .sec1 .col_bg {height: 470px;}
+    
+    .sec1 .col .col1 {width: 48%; margin-right: 0; margin-left: 0;}
+    .sec1 .col .col2 {width: 48%;}
+    
+    .sec1 .col .col1 a {height: 450px;}
+    .sec1 .col .col1 a:after {height: 450px;}
+    .sec1 .col .col2 a {height: 450px;}
+    .sec1 .col .col2 a:after {height: 450px;}
+}
+@media (max-width: 500px){
+    .sec1 .col_bg {display: none;}
+    
+    .sec1 .col {padding: 0 30px; box-sizing: border-box;}
+    .sec1 .col .col1 {float: none; width: 100%;}
+    .sec1 .col .col2 {float: none; width: 100%;}
+    
+    .sec1 .col .col1 a {height: 400px;}
+    .sec1 .col .col1 a:after {height: 400px;}
+    .sec1 .col .col2 a {height: 400px;}
+    .sec1 .col .col2 a:after {height: 400px;}
+}
+
+/* sec2 */
+@media (max-width: 840px){
+    .sec2 .prom1 figure {height: 400px;}
+    .sec2 .prom1 figcaption strong {font-size: 20px; margin-bottom: 5px;}
+    .sec2 .prom1 figcaption span {font-size: 15px;}
+    
+    .sec2 .prom2 figure {height: 400px;}
+    .sec2 .prom2 figcaption strong {font-size: 20px;}
+}
+@media (max-width: 700px){
+    .sec2 {margin: 150px 0;}
+    .sec2 .prom1 {float: none; width: 100%;}
+    .sec2 .prom2 {float: none; width: 100%;}
+}
+@media (max-width: 500px){
+    .sec2 .prom1 figure {height: 350px;}
+    .sec2 .prom2 figure {height: 350px;}
+}
+@media (max-width: 360px){
+    .sec2 .prom1 figcaption {padding: 25px 10px;}
+    .sec2 .prom1 figcaption span {font-size: 14px;}
+    .sec2 .prom1 figcaption a {right: 10px;}
+    .sec2 .prom2 figcaption {padding: 25px 10px;}
+    .sec2 .prom2 figcaption a {right: 10px;}
+}
+
+/* sec3 */
+@media (max-width: 980px){
+    .sec3 .men {padding-right: 0;}
+    .sec3 .men h3 {float: none; transform: rotate(0); margin-top: 0; font-size: 24px; text-align: center; letter-spacing: 5px; margin-bottom: 40px;}
+    .sec3 .men-slider {float: none; width: 100%; margin: 0 auto;}
+    .sec3 .men .line {top: 33px; left: 50%; transform: translate(-50%, 0);}
+    .sec3 .men .line span {display: inline-block; width: 5px; height: 30px; margin: 0 3px;}
+    
+    .sec3 .women {padding-right: 0;}
+    .sec3 .women h3 {float: none; transform: rotate(0); margin-top: 0; font-size: 24px; text-align: center; letter-spacing: 5px; margin-bottom: 40px; margin-left: 0;}
+    .sec3 .women-slider {float: none; width: 100%; margin: 0 auto;}
+    .sec3 .women .line {top: 33px; left: 50%; transform: translate(-50%, 0);}
+    .sec3 .women .line span {display: inline-block; width: 5px; height: 30px; margin: 0 3px;}
+    
+    .sec3 .kids {padding-right: 0;}
+    .sec3 .kids h3 {float: none; transform: rotate(0); margin-top: 0; font-size: 24px; text-align: center; letter-spacing: 5px; margin-bottom: 40px; margin-left: 0;}
+    .sec3 .kids-slider {float: none; width: 100%; margin: 0 auto;}
+    .sec3 .kids .line {top: 33px; left: 50%; transform: translate(-50%, 0);}
+    .sec3 .kids .line span {display: inline-block; width: 5px; height: 30px; margin: 0 3px;}
+}
+@media (max-width: 600px){
+    .sec3 {margin-bottom: 150px;}
+    .sec3 .best-seller {padding: 0;}
+}
+@media (max-width: 380px){
+    .sec3 {text-align: center;}
+}
+
+/* sec4 */
+@media (max-width: 1020px){
+    .sec4 a {width: 24.5%;}
+    .sec4 a:nth-child(9) {display: none;}
+    .sec4 a:nth-child(10) {display: none;}
+}
+@media (max-width: 600px){
+    .sec4 {margin-bottom: 150px;}
+    .sec4 a {width: 32.3%;}
+    .sec4 a:nth-child(9) {display: inline-block;}
+}
+
+/* sec5 */
+@media (max-width: 900px){
+    .sec5 .adi_bg {width: 100%; height: 500px;}
+    .sec5 .button {top: 80%; right: 3%;}
+}
+@media (max-width: 600px){
+    .sec5 {margin-bottom: 100px;}
+}
+@media (max-width: 480px){
+    .sec5 .adi_bg {height: 300px;}
+}
+
+/* footer */
+@media (max-width: 950px){
+    .footer .footer_top .f_menu {float: none; width: 100%; text-align: center;}
+    .footer .footer_top .f_menu li {margin: 0 40px;}
+    .footer .footer_top .sns {float: none; width: 100%; text-align: center; margin-top: 30px;}
+}
+@media (max-width: 480px){
+    .footer .footer_btm p {font-size: 15px;}
+}
